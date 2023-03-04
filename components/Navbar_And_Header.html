@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/07e225e4b9.js" crossorigin="anonymous"></script>
+    <title>Nav bar</title>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav class="navbar--container">
+        <!-- <div class="nav--logo--toggler"> -->
+        <h1 class="nav--logo h1--primary">Portfolio</h1>
+        <span class="fa fa-bars nav--toggler"></span>
+        <!-- </div> -->
+        <ul class="nav--menu list">
+            <li class="list--item nav--menu--item"><a href="#">Home</a></li>
+            <li class="list--item nav--menu--item"><a href="#">About</a></li>
+            <li class="list--item nav--menu--item"><a href="#">Service</a></li>
+            <li class="list--item nav--menu--item"><a href="#">Project</a></li>
+            <li class="list--item nav--menu--item"><a href="#">Pages</a></li>
+            <li class="list--item nav--menu--item"><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <script>
+        const body = document.querySelector("body")
+        const navbarContainer = document.querySelector(".navbar--container")
+        const toggler = document.querySelector(".nav--toggler")
+        
+        toggler.addEventListener("click", function () { 
+            navbarContainer.classList.toggle("nav--menu--opener"); 
+        })
+    </script>
+    <section class="header--container header--1x2">
+        <div class="heading--container">
+            <h1 class="h1--header--primary">
+                All in one SEO tool need to grow your business rapidly
+            </h1>
+            <h3 class="h3--primary">
+                Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem
+            </h3>
+            <div class="btn--container">
+                <button class="btn--light">Free Quote</button>
+                <button class="btn--outline--light">Contact Us</button>
+            </div>
+        </div>
+        <img class="header-image-container" src="../images/coding.png" alt="">
+    </section>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/07e225e4b9.js" crossorigin="anonymous"></script>
+    <title>Nav bar</title>
+    <style>
+        .nav--logo {
+            cursor: pointer;
+        }
+        .navbar--container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .nav--toggler {
+            font-size: 2rem;
+            border: 2px solid rgba(211, 211, 211, 0.5);
+            padding: 0.4rem 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .nav--toggler:hover {
+            box-shadow: 0 0 5px gray;
+            transition: all 0.5s;
+        }
+        .nav--menu {
+            font-weight: 400;
+            margin: 0rem;
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            /* transition: all 0.8s; */
+        }
+        .nav--menu--opener .nav--menu {
+            opacity: 1;
+            max-height: 100vh;
+            transition: all 0.8s;
+        }
+        .nav--menu--item > a {
+            color: var(--color--header--secondary);
+            cursor: pointer;
+        }
+        .nav--menu--item > a:hover {
+            color: var(--color--secondary);
+        }
+        @media screen and (min-width: 768px) {
+            .nav--toggler {
+                display: none;
+            }
+            .nav--menu {
+                width: auto;
+                max-height: 100vh;
+                opacity: 1;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar--container">
+        <!-- <div class="nav--logo--toggler"> -->
+        <h1 class="nav--logo h1--primary">Portfolio</h1>
+        <span class="fa fa-bars nav--toggler"></span>
+        <!-- </div> -->
+        <ul class="nav--menu list">
+            <li class="list--item nav--menu--item"><a href="#">Home</a></li>
+            <li class="list--item nav--menu--item"><a href="#">About</a></li>
+            <li class="list--item nav--menu--item"><a href="#">Service</a></li>
+            <li class="list--item nav--menu--item"><a href="#">Project</a></li>
+            <li class="list--item nav--menu--item"><a href="#">Pages</a></li>
+            <li class="list--item nav--menu--item"><a href="#">contact</a></li>
+        </ul>
+        <p style="font-size: 2rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est harum ad in aut? Possimus sed aliquid ad tenetur ducimus. Quae beatae autem sequi, facilis fuga placeat expedita optio facere?</p>
+    </nav>
+    <script>
+        const body = document.querySelector("body")
+        const navbarContainer = document.querySelector(".navbar--container")
+        const toggler = document.querySelector(".nav--toggler")
+        
+        toggler.addEventListener("click", function () { 
+            // console.log(toggler)
+            navbarContainer.classList.toggle("nav--menu--opener"); 
+        })
+        // body.addEventListener("click", function() {
+        //     console.log(body)
+        //     navbarContainer.classList.remove("nav--menu--opener")
+        // })
+    </script>
+</body>
+</html>

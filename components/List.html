@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/07e225e4b9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .list {
+            list-style: none;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding-left: 0;
+            display: grid;
+            align-content: center;
+            align-items: center;
+        }
+        .list--item {
+            margin: 1rem;
+        }
+        @media screen and (min-width:575px) {
+            .list--1x1 {
+                grid-template-columns: repeat(1, auto);
+            }
+        }
+        @media screen and (min-width:575px) {
+            .list--1x2 {
+                grid-template-columns: repeat(2, auto);
+            }
+        }
+        .fa--primary {
+            color: var(--color--primary);
+            font-family: var(--font-fa);
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- fa fa-check  -->
+    <ul class="list list--1x1 list--1x2">
+        <li class="list--item"><span class="fa fa-check fa--primary"></span> Award Winning</li>
+        <li class="list--item"><span class="fa fa-check fa--primary"></span> Professional Staff</li>
+        <li class="list--item"><span class="fa fa-check fa--primary"></span> 24/7 Support</li>
+        <li class="list--item"><span class="fa fa-check fa--primary"></span> Fair Prices</li>
+    </ul>
+</body>
+</html>

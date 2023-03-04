@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/07e225e4b9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        /* Header style start */
+        .header--container {
+            background: var(--color--primary);
+            height: auto;
+            width: auto;
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .header-image-container {
+            padding: 2rem;
+            width: 100%;
+            text-align: center;
+        }
+        .heading--container {
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .btn--container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        @media screen and (min-width: 768px) {
+            .header--1x2 {
+                grid-template-columns: repeat(2, auto);
+            }
+            .heading--container {
+                text-align: left;
+            }
+            .btn--container {
+                justify-content: left;
+            }
+        }
+        /* Header style end */
+    </style>
+    
+</head>
+<body>
+    <section class="header--container header--1x2">
+        <div class="heading--container">
+            <h1 class="h1--header--primary">
+                All in one SEO tool need to grow your business rapidly
+            </h1>
+            <h3 class="h3--primary">
+                Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem
+            </h3>
+            <div class="btn--container">
+                <button class="btn--light">Free Quote</button>
+                <button class="btn--outline--light">Contact Us</button>
+            </div>
+        </div>
+        <img class="header-image-container" src="../images/coding.png" alt="">
+    </section>
+</body>
+</html>
