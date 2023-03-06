@@ -175,6 +175,7 @@ a {
 /* Nav bar styles start */
 .nav--logo {
     cursor: pointer;
+    margin: 0rem;
 }
 .navbar--container {
     display: flex;
@@ -251,7 +252,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 .btn--container {
@@ -264,6 +264,7 @@ a {
         grid-template-columns: repeat(2, auto);
     }
     .heading--container {
+        justify-content: left;
         text-align: left;
     }
     .btn--container {
